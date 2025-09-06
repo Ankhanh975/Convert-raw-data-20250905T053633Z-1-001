@@ -1,0 +1,11 @@
+# Ignore image files
+*.png
+*.tiff
+*.tif
+
+# Ignore other common files
+*.pyc
+__pycache__/
+*.log
+.DS_Store
+Thumbs.db

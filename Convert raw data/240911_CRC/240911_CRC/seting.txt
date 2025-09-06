@@ -1,0 +1,6 @@
+201419959
+fresh tissue
+
+weight 1: 50g
+weight 2: 100g
+weight 3: 200g
