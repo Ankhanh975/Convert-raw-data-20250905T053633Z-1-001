@@ -22,19 +22,20 @@ def find_png_files(root_path="."):
     
     return png_files
 
-def create_destination_structure(source_path, dest_base_path):
+def create_destination_structure(source_path, source_root, dest_base_path):
     """
     Create the destination directory structure based on the source structure.
     
     Args:
         source_path (str): Source file path
+        source_root (str): Source root directory
         dest_base_path (str): Base destination directory
     
     Returns:
         str: Destination file path
     """
     # Get relative path from the source root
-    rel_path = os.path.relpath(source_path, "Convert raw data")
+    rel_path = os.path.relpath(source_path, source_root)
     
     # Create destination path
     dest_path = os.path.join(dest_base_path, rel_path)
@@ -74,7 +75,7 @@ def separate_png_files(source_root="Convert raw data", dest_root="PNG_Files"):
     for i, png_path in enumerate(png_files, 1):
         try:
             # Create destination path maintaining structure
-            dest_path = create_destination_structure(png_path, dest_root)
+            dest_path = create_destination_structure(png_path, source_root, dest_root)
             
             # Copy the file
             shutil.copy2(png_path, dest_path)
