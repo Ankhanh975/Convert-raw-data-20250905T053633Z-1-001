@@ -1,8 +1,12 @@
-# Ignore all folders by default
-*/
+# Ignore image files
+*.tiff
+*.tif
+*.dat
 
-# Keep Processed_1858 folder
-!Processed_1858/
-
-# Keep all files in the root directory
-!/*.*
+*.pyc
+__pycache__/
+PNG_Files/
+Convert raw data/
+*.log
+.DS_Store
+Thumbs.db
