@@ -1,11 +1,8 @@
-# Ignore image files
-*.png
-*.tiff
-*.tif
+# Ignore all folders by default
+*/
 
-# Ignore other common files
-*.pyc
-__pycache__/
-*.log
-.DS_Store
-Thumbs.db
+# Keep Processed_1858 folder
+!Processed_1858/
+
+# Keep all files in the root directory
+!/*.*

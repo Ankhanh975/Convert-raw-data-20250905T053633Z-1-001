@@ -1,3 +1,5 @@
+
+
 # Data Processing Scripts
 
 This repository contains Python scripts for processing and organizing image data files. The scripts were created to handle TIFF to PNG conversion, folder organization, and file management tasks.
@@ -231,6 +233,7 @@ All deletion and modification scripts include:
 15. `consolidate_png_files.py` - Consolidate PNG files into Processed folder
 16. `flatten_crc_structure.py` - Flatten CRC folder structure
 17. `count_png_files.py` - Count and verify PNG files
+
 
 ## File Structure
 
