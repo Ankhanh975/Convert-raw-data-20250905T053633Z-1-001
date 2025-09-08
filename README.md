@@ -130,6 +130,53 @@ This repository contains Python scripts for processing and organizing image data
   - Shows comprehensive comparison results
   - Helps verify data integrity after consolidation and flattening
 
+### 18. `move_healthy_to_01.py`
+**Purpose:** Move all healthy PNG files to the '01' subfolder within each relevant directory in the Processed/healthy structure.
+- Ensures all healthy images are grouped for easier access and analysis.
+
+### 19. `medical_image_classifier.py`
+**Purpose:** Train and evaluate a binary classifier (healthy vs tumour) on the processed image dataset using TensorFlow and Keras.
+- Includes data loading, preprocessing, model training, and evaluation.
+
+### 20. `filter_1858_files.py`
+**Purpose:** Filter and select PNG files with frequency 1858 from the dataset.
+- Useful for frequency-specific analysis or experiments.
+
+### 21. `divide_images_1858.py`
+**Purpose:** Divide images with frequency 1858 into smaller patches or subsets for further processing or augmentation.
+- Supports dataset expansion and patch-based analysis.
+
+### 22. `create_histograms_for_processed.py`
+**Purpose:** Generate and save a histogram image for every PNG in the Processed folder and its subfolders.
+- Saves histogram images in a parallel directory structure for analysis and visualization.
+
+### 23. `count_uniform_histograms.py`
+**Purpose:** Count PNG images in a folder (default: Processed) where 99% or more of the pixels have a single pixel value (indicating likely faulty or blank images).
+- Prints the total, the count of uniform images, and sample file paths.
+
+### 24. `filter_uniform_images.py`
+**Purpose:** Filter out uniform images (≥99% single pixel value) from the Processed folder and copy only the non-uniform images to a new folder called Processed_filtered, preserving the directory structure.
+- Ensures only valid, non-blank images are used for further processing.
+
+### 25. `histogram_image_classifier.py`
+**Purpose:** Train and evaluate a binary classifier (healthy vs tumour) on histogram images in the Processed_histograms folder using TensorFlow and Keras.
+- Loads histogram PNGs, preprocesses, splits into train/val/test, trains a minimal CNN, and evaluates results.
+
+### 26. `filter_uniform_images_1858.py`
+**Purpose:** CLI wrapper to filter out uniform images specifically for the 1858 dataset.
+- Defaults: `--src Processed_1858`, `--dst Processed_1858_filtered`, `--threshold 0.99`.
+- Example: `python filter_uniform_images_1858.py --threshold 0.995`.
+
+### 27. `divide_images_generic.py`
+**Purpose:** Generic divider that splits 128x128 PNGs into 16 patches of 32x32.
+- Accepts `--src` and `--dst` (defaults to `Processed_1858_filtered` → `Processed_1858_filtered_divided`).
+- Preserves class/category subfolders.
+
+### 28. `divided_image_classifier.py`
+**Purpose:** Train and evaluate a binary classifier on divided patches (32x32) from `Processed_1858_filtered_divided`.
+- Includes 4-way rotation augmentation during loading.
+- Saves results to dedicated files (model, plots) to avoid overwrites.
+
 ## Usage Examples
 
 ### Convert TIFF to PNG
@@ -188,6 +235,11 @@ python flatten_crc_structure.py
 python count_png_files.py
 ```
 
+### Run histogram image classification
+```bash
+python histogram_image_classifier.py
+```
+
 ## Dependencies
 
 - **PIL (Pillow)** - Image processing
@@ -215,7 +267,7 @@ All deletion and modification scripts include:
 
 ## Total Scripts Created
 
-**17 Python scripts** for comprehensive data processing and organization:
+**28 Python scripts** for comprehensive data processing and organization:
 1. `count_magnitute_folders.py` - Count Magnitude folders
 2. `delete_magnitude_folders.py` - Delete Magnitude folders
 3. `count_phase_folders.py` - Count Phase folders
@@ -233,7 +285,17 @@ All deletion and modification scripts include:
 15. `consolidate_png_files.py` - Consolidate PNG files into Processed folder
 16. `flatten_crc_structure.py` - Flatten CRC folder structure
 17. `count_png_files.py` - Count and verify PNG files
-
+18. `move_healthy_to_01.py` - Move healthy PNG files to '01' subfolder
+19. `medical_image_classifier.py` - Medical image classification
+20. `filter_1858_files.py` - Filter PNG files with frequency 1858
+21. `divide_images_1858.py` - Divide images with frequency 1858
+22. `create_histograms_for_processed.py` - Generate histograms for all PNGs in Processed_filtered
+23. `count_uniform_histograms.py` - Count uniform (likely faulty) images
+24. `filter_uniform_images.py` - Filter out uniform images
+25. `histogram_image_classifier.py` - Histogram image classification
+26. `filter_uniform_images_1858.py` - Filter uniform images for 1858 dataset (CLI)
+27. `divide_images_generic.py` - Generic 128x128 → 16×32x32 divider with CLI
+28. `divided_image_classifier.py` - Classifier for 32x32 divided patches
 
 ## File Structure
 
