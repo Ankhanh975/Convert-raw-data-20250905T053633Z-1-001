@@ -1,0 +1,71 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py
+STARTED: 2025-09-08T21:07:27.969274
+ENDED:   2025-09-08T21:07:28.118311
+DURATION_SECONDS: 0.149
+STATUS: failed
+RETURN_CODE: 1
+
+===== STDOUT =====
+Counting PNG files in original PNG_Files directory...
+Directory PNG_Files does not exist!
+
+Counting PNG files in Processed directory...
+  Processed\healthy\01: 28 PNG files
+  Processed\healthy\03: 28 PNG files
+  Processed\healthy\04: 14 PNG files
+  Processed\healthy\06: 28 PNG files
+  Processed\healthy\07: 28 PNG files
+  Processed\healthy\08: 28 PNG files
+  Processed\healthy\09: 28 PNG files
+  Processed\healthy\10: 28 PNG files
+  Processed\healthy\11: 14 PNG files
+  Processed\healthy\13: 28 PNG files
+  Processed\healthy\14: 28 PNG files
+  Processed\healthy\15: 28 PNG files
+  Processed\healthy\16: 28 PNG files
+  Processed\healthy\17: 28 PNG files
+  Processed\healthy\18: 26 PNG files
+  Processed\healthy\240911_CRC: 28 PNG files
+  Processed\healthy\250521\250521_CRC\images: 26 PNG files
+  Processed\healthy\250528_CRC: 26 PNG files
+  Processed\healthy\250702_CRC: 28 PNG files
+  Processed\healthy\250716_CRC: 28 PNG files
+  Processed\healthy\250717_CRC: 28 PNG files
+  Processed\healthy\250722_CRC: 28 PNG files
+  Processed\tumour\04: 14 PNG files
+  Processed\tumour\06: 28 PNG files
+  Processed\tumour\07: 28 PNG files
+  Processed\tumour\08: 28 PNG files
+  Processed\tumour\09: 12 PNG files
+  Processed\tumour\10: 28 PNG files
+  Processed\tumour\11: 28 PNG files
+  Processed\tumour\12: 28 PNG files
+  Processed\tumour\14: 28 PNG files
+  Processed\tumour\15: 28 PNG files
+  Processed\tumour\16: 28 PNG files
+  Processed\tumour\17: 28 PNG files
+  Processed\tumour\18: 24 PNG files
+
+Total PNG files found: 912
+
+============================================================
+COMPARISON RESULTS
+============================================================
+Original PNG_Files total: 0
+Processed total: 912
+Difference: 912
+
+
+===== STDERR =====
+Traceback (most recent call last):
+  File "C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py", line 105, in <module>
+    count_png_files()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py", line 35, in count_png_files
+    print("\u274c WARNING: File count mismatch!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+

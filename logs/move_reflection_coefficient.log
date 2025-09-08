@@ -1,0 +1,16 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\move_reflection_coefficient.py
+STARTED: 2025-09-08T21:07:27.586092
+ENDED:   2025-09-08T21:07:27.671303
+DURATION_SECONDS: 0.085
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Reflection Coefficient Files Mover
+============================================================
+1. Scanning for 'Reflection Coefficient' folders in PNG_Files...
+No 'Reflection Coefficient' folders found in PNG_Files.
+
+
+===== STDERR =====
+

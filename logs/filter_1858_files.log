@@ -1,0 +1,217 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\filter_1858_files.py
+STARTED: 2025-09-08T21:07:28.121941
+ENDED:   2025-09-08T21:07:28.449939
+DURATION_SECONDS: 0.328
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Filter 1858 Files Script
+==================================================
+This script will copy files containing '1858' in their names
+Source: Processed folder
+Target: Processed_1858 folder
+==================================================
+Target directory 'Processed_1858' already exists. Removing...
+Created target directory: Processed_1858
+Copied: healthy\01/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\01/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\03/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\03/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\04/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\04/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\06/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\06/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\06/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\06/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\07/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\07/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\07/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\07/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\08/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\08/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\08/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\08/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\09/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\09/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\09/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\09/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\10/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\10/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\10/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\10/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\11/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\11/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\13/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\13/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\13/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\13/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\14/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\14/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\14/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\14/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\15/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\15/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\15/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\15/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\16/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\16/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\16/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\16/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\17/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\17/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\17/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\17/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\18/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\18/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\18/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\18/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\04/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\04/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\06/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\06/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\06/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\06/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\07/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\07/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\07/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\07/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\08/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\08/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\08/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\08/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\09/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\09/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\09/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\09/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\10/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\10/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\10/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\10/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\11/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\11/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\11/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\11/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\12/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\12/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\12/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\12/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\14/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\14/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\14/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\14/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\15/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\15/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\15/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\15/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\16/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\16/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\16/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\16/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\17/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\17/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\17/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\17/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\18/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\18/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\18/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\18/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+
+Filtering completed!
+Total PNG files found: 912
+Files with '1858' copied: 134
+Filtering ratio: 14.7%
+
+Files by category:
+  healthy: 84 files
+  tumour: 50 files
+
+Verifying filtered files in 'Processed_1858'...
+  healthy\01: 4 files
+  healthy\03: 4 files
+  healthy\04: 2 files
+  healthy\06: 4 files
+  healthy\07: 4 files
+  healthy\08: 4 files
+  healthy\09: 4 files
+  healthy\10: 4 files
+  healthy\11: 2 files
+  healthy\13: 4 files
+  healthy\14: 4 files
+  healthy\15: 4 files
+  healthy\16: 4 files
+  healthy\17: 4 files
+  healthy\18: 4 files
+  healthy\240911_CRC: 4 files
+  healthy\250521\250521_CRC\images: 4 files
+  healthy\250528_CRC: 4 files
+  healthy\250702_CRC: 4 files
+  healthy\250716_CRC: 4 files
+  healthy\250717_CRC: 4 files
+  healthy\250722_CRC: 4 files
+  tumour\04: 2 files
+  tumour\06: 4 files
+  tumour\07: 4 files
+  tumour\08: 4 files
+  tumour\09: 4 files
+  tumour\10: 4 files
+  tumour\11: 4 files
+  tumour\12: 4 files
+  tumour\14: 4 files
+  tumour\15: 4 files
+  tumour\16: 4 files
+  tumour\17: 4 files
+  tumour\18: 4 files
+
+Total files in filtered directory: 134
+
+Sample filenames:
+  healthy\01/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\01/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+  healthy\03/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\03/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+  healthy\04/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\04/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\06/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\06/sample_frequency_sweep__weight_1_F_1858p5.png
+
+Script completed successfully!
+Created Processed_1858 with 134 filtered files
+
+
+===== STDERR =====
+

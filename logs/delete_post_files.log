@@ -1,0 +1,16 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\delete_post_files.py
+STARTED: 2025-09-08T21:07:27.676008
+ENDED:   2025-09-08T21:07:27.730842
+DURATION_SECONDS: 0.055
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Post Files Deletion Tool
+============================================================
+1. Scanning for files with '__post' in name in PNG_Files...
+No files with '__post' found in PNG_Files.
+
+
+===== STDERR =====
+

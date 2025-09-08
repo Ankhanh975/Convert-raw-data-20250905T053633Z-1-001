@@ -5,8 +5,5 @@
 
 *.pyc
 __pycache__/
-PNG_Files/
-Convert raw data/
-*.log
 .DS_Store
 Thumbs.db

@@ -1,0 +1,15 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\filter_uniform_images_1858.py
+STARTED: 2025-09-08T21:07:28.451953
+ENDED:   2025-09-08T21:07:29.179254
+DURATION_SECONDS: 0.727
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Total PNG images processed: 134
+Non-uniform images copied to Processed_1858_filtered: 122
+Uniform images (filtered out): 12
+
+
+===== STDERR =====
+

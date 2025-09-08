@@ -1,0 +1,507 @@
+Pipeline Report
+================================================================================
+
+Generated at: 2025-09-08T21:07:32.387002
+Python: C:\Python313\python.exe
+
+--------------------------------------------------------------------------------
+Step: convert_tif_to_png
+Script: convert_tif_to_png.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.161899
+Ended:   2025-09-08T21:07:27.482505
+Duration: 0.321 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\convert_tif_to_png.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\convert_tif_to_png.log
+
+STDOUT
+~~~~~~
+TIFF to PNG Conversion Tool
+============================================================
+1. Scanning for .tif files...
+No .tif files found in 'Convert raw data' directory.
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: separate_png_files
+Script: separate_png_files.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.484507
+Ended:   2025-09-08T21:07:27.584224
+Duration: 0.100 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\separate_png_files.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\separate_png_files.log
+
+STDOUT
+~~~~~~
+PNG File Separation Tool
+============================================================
+1. Scanning for .png files...
+No .png files found in 'Convert raw data' directory.
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: move_reflection_coefficient
+Script: move_reflection_coefficient.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.586092
+Ended:   2025-09-08T21:07:27.671303
+Duration: 0.085 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\move_reflection_coefficient.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\move_reflection_coefficient.log
+
+STDOUT
+~~~~~~
+Reflection Coefficient Files Mover
+============================================================
+1. Scanning for 'Reflection Coefficient' folders in PNG_Files...
+No 'Reflection Coefficient' folders found in PNG_Files.
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: delete_post_files
+Script: delete_post_files.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.676008
+Ended:   2025-09-08T21:07:27.730842
+Duration: 0.055 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\delete_post_files.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\delete_post_files.log
+
+STDOUT
+~~~~~~
+Post Files Deletion Tool
+============================================================
+1. Scanning for files with '__post' in name in PNG_Files...
+No files with '__post' found in PNG_Files.
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: consolidate_png_files
+Script: consolidate_png_files.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.733434
+Ended:   2025-09-08T21:07:27.831264
+Duration: 0.098 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\consolidate_png_files.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\consolidate_png_files.log
+
+STDOUT
+~~~~~~
+Created destination directories: Processed\healthy and Processed\tumour
+
+Consolidation complete!
+Healthy files copied: 0
+Tumour files copied: 0
+Total files processed: 0
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: flatten_crc_structure
+Script: flatten_crc_structure.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:27.833026
+Ended:   2025-09-08T21:07:27.967600
+Duration: 0.135 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\flatten_crc_structure.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\flatten_crc_structure.log
+
+STDOUT
+~~~~~~
+Starting to flatten CRC folder structure...
+
+Flattening healthy directory...
+
+Flattening tumour directory...
+
+Cleaning up empty directories...
+
+Flattening complete!
+Healthy files moved: 0
+Tumour files moved: 0
+Total files moved: 0
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: count_png_files
+Script: count_png_files.py
+Args: (none)
+Status: failed (code 1)
+Started: 2025-09-08T21:07:27.969274
+Ended:   2025-09-08T21:07:28.118311
+Duration: 0.149 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\count_png_files.log
+
+STDOUT
+~~~~~~
+Counting PNG files in original PNG_Files directory...
+Directory PNG_Files does not exist!
+
+Counting PNG files in Processed directory...
+  Processed\healthy\01: 28 PNG files
+  Processed\healthy\03: 28 PNG files
+  Processed\healthy\04: 14 PNG files
+  Processed\healthy\06: 28 PNG files
+  Processed\healthy\07: 28 PNG files
+  Processed\healthy\08: 28 PNG files
+  Processed\healthy\09: 28 PNG files
+  Processed\healthy\10: 28 PNG files
+  Processed\healthy\11: 14 PNG files
+  Processed\healthy\13: 28 PNG files
+  Processed\healthy\14: 28 PNG files
+  Processed\healthy\15: 28 PNG files
+  Processed\healthy\16: 28 PNG files
+  Processed\healthy\17: 28 PNG files
+  Processed\healthy\18: 26 PNG files
+  Processed\healthy\240911_CRC: 28 PNG files
+  Processed\healthy\250521\250521_CRC\images: 26 PNG files
+  Processed\healthy\250528_CRC: 26 PNG files
+  Processed\healthy\250702_CRC: 28 PNG files
+  Processed\healthy\250716_CRC: 28 PNG files
+  Processed\healthy\250717_CRC: 28 PNG files
+  Processed\healthy\250722_CRC: 28 PNG files
+  Processed\tumour\04: 14 PNG files
+  Processed\tumour\06: 28 PNG files
+  Processed\tumour\07: 28 PNG files
+  Processed\tumour\08: 28 PNG files
+  Processed\tumour\09: 12 PNG files
+  Processed\tumour\10: 28 PNG files
+  Processed\tumour\11: 28 PNG files
+  Processed\tumour\12: 28 PNG files
+  Processed\tumour\14: 28 PNG files
+  Processed\tumour\15: 28 PNG files
+  Processed\tumour\16: 28 PNG files
+  Processed\tumour\17: 28 PNG files
+  Processed\tumour\18: 24 PNG files
+
+Total PNG files found: 912
+
+============================================================
+COMPARISON RESULTS
+============================================================
+Original PNG_Files total: 0
+Processed total: 912
+Difference: 912
+
+
+STDERR
+~~~~~~
+Traceback (most recent call last):
+  File "C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py", line 105, in <module>
+    count_png_files()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\count_png_files.py", line 35, in count_png_files
+    print("\u274c WARNING: File count mismatch!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+
+
+--------------------------------------------------------------------------------
+Step: filter_1858_files
+Script: filter_1858_files.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:28.121941
+Ended:   2025-09-08T21:07:28.449939
+Duration: 0.328 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\filter_1858_files.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\filter_1858_files.log
+
+STDOUT
+~~~~~~
+Filter 1858 Files Script
+==================================================
+This script will copy files containing '1858' in their names
+Source: Processed folder
+Target: Processed_1858 folder
+==================================================
+Target directory 'Processed_1858' already exists. Removing...
+Created target directory: Processed_1858
+Copied: healthy\01/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\01/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\03/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\03/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\04/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\04/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\06/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\06/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\06/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\06/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\07/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\07/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\07/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\07/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\08/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\08/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\08/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\08/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\09/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\09/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\09/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\09/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\10/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\10/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\10/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\10/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\11/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\11/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\13/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\13/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\13/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\13/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\14/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\14/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\14/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\14/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\15/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\15/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\15/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\15/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\16/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\16/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\16/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\16/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\17/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\17/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\17/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\17/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\18/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\18/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\18/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\18/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\240911_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250521\250521_CRC\images/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250528_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250702_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250716_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250717_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: healthy\250722_CRC/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\04/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\04/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\06/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\06/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\06/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\06/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\07/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\07/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\07/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\07/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\08/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\08/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\08/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\08/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\09/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\09/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\09/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\09/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\10/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\10/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\10/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\10/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\11/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\11/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\11/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\11/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\12/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\12/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\12/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\12/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\14/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\14/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\14/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\14/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\15/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\15/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\15/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\15/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\16/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\16/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\16/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\16/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\17/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\17/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\17/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\17/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+Copied: tumour\18/sample_frequency_sweep__weight_1_F_1858p0.png
+Copied: tumour\18/sample_frequency_sweep__weight_1_F_1858p5.png
+Copied: tumour\18/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+Copied: tumour\18/sample_frequency_sweep__weight_1__repeat_F_1858p5.png
+
+Filtering completed!
+Total PNG files found: 912
+Files with '1858' copied: 134
+Filtering ratio: 14.7%
+
+Files by category:
+  healthy: 84 files
+  tumour: 50 files
+
+Verifying filtered files in 'Processed_1858'...
+  healthy\01: 4 files
+  healthy\03: 4 files
+  healthy\04: 2 files
+  healthy\06: 4 files
+  healthy\07: 4 files
+  healthy\08: 4 files
+  healthy\09: 4 files
+  healthy\10: 4 files
+  healthy\11: 2 files
+  healthy\13: 4 files
+  healthy\14: 4 files
+  healthy\15: 4 files
+  healthy\16: 4 files
+  healthy\17: 4 files
+  healthy\18: 4 files
+  healthy\240911_CRC: 4 files
+  healthy\250521\250521_CRC\images: 4 files
+  healthy\250528_CRC: 4 files
+  healthy\250702_CRC: 4 files
+  healthy\250716_CRC: 4 files
+  healthy\250717_CRC: 4 files
+  healthy\250722_CRC: 4 files
+  tumour\04: 2 files
+  tumour\06: 4 files
+  tumour\07: 4 files
+  tumour\08: 4 files
+  tumour\09: 4 files
+  tumour\10: 4 files
+  tumour\11: 4 files
+  tumour\12: 4 files
+  tumour\14: 4 files
+  tumour\15: 4 files
+  tumour\16: 4 files
+  tumour\17: 4 files
+  tumour\18: 4 files
+
+Total files in filtered directory: 134
+
+Sample filenames:
+  healthy\01/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\01/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\01/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+  healthy\03/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\03/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\03/sample_frequency_sweep__weight_1__repeat_F_1858p0.png
+  healthy\04/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\04/sample_frequency_sweep__weight_1_F_1858p5.png
+  healthy\06/sample_frequency_sweep__weight_1_F_1858p0.png
+  healthy\06/sample_frequency_sweep__weight_1_F_1858p5.png
+
+Script completed successfully!
+Created Processed_1858 with 134 filtered files
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: filter_uniform_images_1858
+Script: filter_uniform_images_1858.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:28.451953
+Ended:   2025-09-08T21:07:29.179254
+Duration: 0.727 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\filter_uniform_images_1858.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\filter_uniform_images_1858.log
+
+STDOUT
+~~~~~~
+Total PNG images processed: 134
+Non-uniform images copied to Processed_1858_filtered: 122
+Uniform images (filtered out): 12
+
+
+STDERR
+~~~~~~
+
+
+--------------------------------------------------------------------------------
+Step: divide_images_generic
+Script: divide_images_generic.py
+Args: (none)
+Status: success (code 0)
+Started: 2025-09-08T21:07:29.181151
+Ended:   2025-09-08T21:07:32.385665
+Duration: 3.205 s
+Command: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\divide_images_generic.py
+Log file: C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\logs\divide_images_generic.log
+
+STDOUT
+~~~~~~
+Image Division Script (Generic)
+==================================================
+Source: Processed_1858_filtered
+Target: Processed_1858_filtered_divided
+Target directory 'Processed_1858_filtered_divided' already exists. Removing...
+
+Division completed!
+Total images processed: 122
+Total pieces created: 1952
+Average pieces per image: 16.0
+
+
+STDERR
+~~~~~~
+
+

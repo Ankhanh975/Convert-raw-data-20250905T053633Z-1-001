@@ -1,0 +1,18 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\consolidate_png_files.py
+STARTED: 2025-09-08T21:07:27.733434
+ENDED:   2025-09-08T21:07:27.831264
+DURATION_SECONDS: 0.098
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Created destination directories: Processed\healthy and Processed\tumour
+
+Consolidation complete!
+Healthy files copied: 0
+Tumour files copied: 0
+Total files processed: 0
+
+
+===== STDERR =====
+

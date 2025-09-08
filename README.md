@@ -1,3 +1,78 @@
+## Project Report: End-to-End Data Processing and Training
+
+This report summarizes how raw data in `Convert raw data` is processed and copied into structured folders, and documents the three classifier training pipelines used in this workspace.
+
+### End-to-End Data Pipeline
+
+1) Convert and collect PNGs
+- Raw input: `Convert raw data/` (original TIFF/PNG assets in nested CRC folders).
+- Convert TIFF → PNG: `convert_tif_to_png.py` (normalizes float TIFFs, preserves alpha/palette).
+- Gather PNGs while preserving hierarchy: `separate_png_files.py` → `PNG_Files/`.
+- Clean-up helpers (as needed): delete `Magnitude`/`Phase`/`Mix` folders, remove `__post` files, move "Reflection Coefficient" files up.
+
+2) Build the canonical processed dataset
+- Consolidate by class into `Processed/healthy` and `Processed/tumour` using `consolidate_png_files.py` and flatten deep CRC paths with `flatten_crc_structure.py`.
+- Optional renames standardize labels (e.g., `rename_folders.py`).
+- Result: `Processed/` is the main dataset for full-image training (`medical_image_classifier.py`).
+
+3) Frequency-specific subset (1858) and quality filtering
+- Select frequency 1858 assets: `filter_1858_files.py` → `Processed_1858/healthy|tumour/...`.
+- Remove near-uniform images: `filter_uniform_images_1858.py` → `Processed_1858_filtered/` (threshold default 0.99).
+
+4) Divide into 32×32 patches for patch-based training
+- Split each 128×128 image into 16 tiles (4×4 grid):
+  - `divide_images_generic.py` (CLI, defaults from `Processed_1858_filtered` → `Processed_1858_filtered_divided`).
+  - Alternative legacy: `divide_images_1858.py` (non-CLI, similar logic).
+- Result: `Processed_1858_filtered_divided/healthy|tumour/...` used by the divided-patch classifier.
+
+5) Histogram view (optional alternate representation)
+- Create one histogram PNG per image (parallel folder tree): `create_histograms_for_processed.py` → `Processed_histograms/healthy|tumour/...`.
+- Result supports histogram-based training (`histogram_image_classifier.py`).
+
+### Where files are copied during processing
+- `Convert raw data/` → PNG assets consolidated under `PNG_Files/` (same relative directories).
+- `PNG_Files/` → class-structured `Processed/healthy|tumour/...` (preserves inner folders; flattened for deep CRC duplications).
+- Frequency subset copied to `Processed_1858/` → filtered copy to `Processed_1858_filtered/` → divided copy to `Processed_1858_filtered_divided/` with 16 tiles per source image.
+- Histograms saved alongside the class structure under `Processed_histograms/`.
+
+### Training Pipelines (3 classifiers)
+
+1) Full-image CNN on `Processed/`
+- Script: `medical_image_classifier.py`
+- Input: 128×128 grayscale images; classes: healthy (0) vs tumour (1).
+- Model: 4 Conv blocks + GlobalAveragePooling + Dense(512→256) + sigmoid.
+- Augmentation: rotation/shift/flip/zoom via `ImageDataGenerator`.
+- Metrics: accuracy, precision, recall; also confusion matrix and sample predictions.
+- Saves: `best_model.h5`, plots (`training_history.png`, `confusion_matrix.png`, `sample_predictions.png`).
+- Run: `python medical_image_classifier.py`
+
+2) Histogram-image CNN on `Processed_histograms/`
+- Script: `histogram_image_classifier.py`
+- Input: 128×128 grayscale histogram PNGs.
+- Model: minimal CNN (Conv8→Conv8→Dense8→sigmoid) for a lightweight baseline.
+- Splits: train/val/test via `train_test_split` with stratification.
+- Reports: accuracy/loss, classification report, confusion matrix; training curves and sample predictions.
+- Saves: `best_hist_model.h5`, plots (`hist_training_history.png`, `hist_confusion_matrix.png`, `hist_sample_predictions.png`), model `histogram_classifier_model.h5`.
+- Run: `python histogram_image_classifier.py`
+
+3) Patch-based classifier on `Processed_1858_filtered_divided/`
+- Script: `divided_image_classifier.py`
+- Input: 32×32 grayscale tiles; 4-way rotation augmentation per tile (0/90/180/270°) during loading.
+- Model: Flatten → Dense(128, ReLU) → Dropout → sigmoid (compact FC network).
+- Training: additional on-the-fly augmentation for robustness; validation split inside script.
+- Reports: accuracy, precision, recall, F1, classification report; confusion matrix and sample predictions.
+- Saves: `best_divided_model.h5`, plots (`divided_training_history.png`, `divided_confusion_matrix.png`, `divided_sample_predictions.png`), model `divided_classifier_model.h5`.
+- Run: `python divided_image_classifier.py`
+
+Tip: Before training the patch-based model, run frequency filtering and division:
+```
+python filter_1858_files.py
+python filter_uniform_images_1858.py --threshold 0.99
+python divide_images_generic.py --src Processed_1858_filtered --dst Processed_1858_filtered_divided
+```
+
+---
+
 
 
 # Data Processing Scripts

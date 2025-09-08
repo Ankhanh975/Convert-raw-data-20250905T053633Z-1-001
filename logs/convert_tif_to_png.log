@@ -1,0 +1,16 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\convert_tif_to_png.py
+STARTED: 2025-09-08T21:07:27.161899
+ENDED:   2025-09-08T21:07:27.482505
+DURATION_SECONDS: 0.321
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+TIFF to PNG Conversion Tool
+============================================================
+1. Scanning for .tif files...
+No .tif files found in 'Convert raw data' directory.
+
+
+===== STDERR =====
+

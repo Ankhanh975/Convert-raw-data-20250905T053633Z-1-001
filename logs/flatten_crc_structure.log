@@ -1,0 +1,24 @@
+COMMAND: C:\Python313\python.exe C:\Users\admin\OneDrive - VINACADEMY LLC\Desktop\android\Convert-raw-data-20250905T053633Z-1-001\flatten_crc_structure.py
+STARTED: 2025-09-08T21:07:27.833026
+ENDED:   2025-09-08T21:07:27.967600
+DURATION_SECONDS: 0.135
+STATUS: success
+RETURN_CODE: 0
+
+===== STDOUT =====
+Starting to flatten CRC folder structure...
+
+Flattening healthy directory...
+
+Flattening tumour directory...
+
+Cleaning up empty directories...
+
+Flattening complete!
+Healthy files moved: 0
+Tumour files moved: 0
+Total files moved: 0
+
+
+===== STDERR =====
+
